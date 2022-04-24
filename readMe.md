@@ -1,0 +1,1 @@
+Developed an algorithm for the game Rock Paper Scissors

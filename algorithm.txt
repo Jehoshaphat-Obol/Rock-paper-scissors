@@ -1,0 +1,61 @@
+1.    create a function called computer play that randomly returns either rock, paper or scissors. that will make the computer play
+        create a variable called choice
+        let choice store a random integer 1, 2 or 3
+            **make sure that zero is not assigned in choice
+                while zero is assigned to choice
+                    assign another random integer 1, 2 or 3
+                end while
+            if the integer is 1 
+                let the function return rock.
+            else if the integer is 2
+                let the function return paper
+            else if the integer is 3
+                let the function return scissors
+            end if
+            **mind case sensitivity
+
+ ***initialize the score to [0][0] ie[player][computer] using an array
+2.    create a function that plays a single round of rock paper scissors.
+            the function should take two parameters the playerSelection and computerSelection.
+            the function should also return a string that declares the winner of the round like so: 'you lose! Paper beats rock'
+            ***Get users input
+            ***looking for the winner by comparing the parameters
+                    if player = rock and computer = rock
+                        then print it is a tie
+                        return [0][0]
+                    else if player = rock and computer = paper
+                        then print you lose! paper beats rock
+                        return [0][1]
+                    else if player = rock and computer = scissors
+                        then print you win! rock beats scissors
+                        return [1][0]
+                    else if player = paper  and computer = rock
+                        then print you win! paper beats rock
+                        return [1][0]
+                    else if player = paper and computer =   paper
+                        then print it is a tie
+                        return [0][0]
+                    else if player = paper and computer = scissors
+                        then print you lose! scissors beat paper
+                        return [0][1]
+                    else if player = scissors and computer = rock
+                        then print you lose! rock beats scissors
+                        return [0][1]
+                    else if player = scissors and computer = paper
+                        then print you win! scissors beats rock
+                        return [1][0]                      
+                    else if player = scissors and computer = scissors
+                        then print it is a tie 
+                        return [0][0] 
+                    else
+                        then print out you've inputted the wrong move please refresh and try again
+                    end if                                      
+                a.  make the playerSelection case-insensitive so that user can input rock, Rock, ROCK or any other variation.
+3.    write a new function that calls the play function and keeps records of the game
+                    create a new array variable point
+                    create an array to hold records
+                    call the function above a get the return value for 5 iterations
+                    assign the return value of the round into the point
+                    add the points to the records
+
+                    compare the computer's score with the players score and declare the winner
